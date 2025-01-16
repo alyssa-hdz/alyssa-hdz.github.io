@@ -16,5 +16,8 @@
     "url": "https://github.com/alyssa-hdz/alyssa-hdz.github.io/issues"
   },
   "homepage": "https://github.com/alyssa-hdz/alyssa-hdz.github.io#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
