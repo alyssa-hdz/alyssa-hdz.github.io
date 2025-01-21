@@ -24,12 +24,12 @@ display:flex;
 justify-content:center;
 align-items: center;
 background-repeat: no-repeat;
-height:500px;
+height: 600px;
 
   }
 
   .main-banner h1 {
-    color: rgb(252, 245, 245);
+    color: rgb(207, 110, 14);
     text-align: top;
     font-family: cursive;
     display: flex;
