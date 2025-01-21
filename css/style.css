@@ -17,11 +17,21 @@
     justify-content:space-between;
 
   }
-  .main-banner {
-background-image: linear-gradient(rgba(255, 255,255, 0.25)) url(../images/main-banner1.jpg)
+  .main-banner{
+background-image: url('../images/main-banner.jpg');
 background-size:cover;
 display:flex;
 justify-content:center;
-align-items:center;
-height:600px;
+align-items: center;
+background-repeat: no-repeat;
+height:500px;
+
+  }
+
+  .main-banner h1 {
+    color: rgb(252, 245, 245);
+    text-align: top;
+    font-family: cursive;
+    display: flex;
+    text
   }
