@@ -33,12 +33,12 @@ height: 600px;
     text-align: top;
     font-family: cursive;
     display: flex;
-    text
+    
   }
 
 
 
-  h3{
+  h2{
     color: #222;
     font size:5rem;
     font-weight:500;
@@ -50,11 +50,12 @@ height: 600px;
     border-radius: 16px;
     box-shadow: inset 0 0 15px #cd6e0e, 0 0 30px #cd6e0e;
     position: relative
+  
     
 
   }
 
-  h3:hover{
+  h2:hover{
     color: fff;
     text-shadow: 0 0 5px #cd6e0e,
     0 0 25px #cd6e0e,
@@ -66,3 +67,29 @@ height: 600px;
   {
     color: #f5f0eb;
   }
+
+  h3{
+    text-shadow: rgba(59, 59, 59, 0.4) -7px 9px 0px;
+
+  }
+.col{
+  background-color: rgba(148, 147, 147, 0.689);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.card{
+  background-color: rgba(148, 147, 147, 0.689);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin padding: 2rem;
+}
+
+form{ 
+  text-align: left;
+  place-items: center;
+  background-color: rgba(148, 147, 147, 0.689);
+ height: 18rem; width: 50rem;
+  border-radius: 16px;
+
+  
+}
