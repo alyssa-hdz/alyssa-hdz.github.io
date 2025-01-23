@@ -7,29 +7,33 @@
     margin: 1rem 1.5rem; 
     text-align: center;
   }
-  .navbar .container-fluid
-  {
-    flex-wrap: wrap;
+
+  .navbar .container-fluid {
     display: flex;
+    flex-wrap: wrap; 
     padding-left: 0;
     margin-bottom: 0;
-    list-style-position:none
-    justify-content:space-between;
-
+    list-style: none; 
+    justify-content: space-between;
   }
+
+.nav-link{
+  color: #cd6e0e;
+}
+
+
+
   .main-banner{
-background-image: url('../images/main-banner.jpg');
+background-image: url('../images/horses.gif');
 background-size:cover;
 display:flex;
 justify-content:center;
 align-items: center;
 background-repeat: no-repeat;
-height: 600px;
-
-  }
+height: 600px; }
 
   .main-banner h1 {
-    color: #cd6e0e;
+    color: #fbf8f5;
     text-align: top;
     font-family: cursive;
     display: flex;
@@ -37,23 +41,18 @@ height: 600px;
   }
 
 
-
-  h2{
+  h2 {
     color: #222;
-    font size:5rem;
-    font-weight:500;
+    font-size: 5rem; 
+    font-weight: 500;
     letter-spacing: 4px;
-    cursor:pointer;
-    transition:0.5s;
+    cursor: pointer;
+    transition: 0.5s; 
     border: 8px solid #cd6e0e;
     padding: 15px 60px;
     border-radius: 16px;
     box-shadow: inset 0 0 15px #cd6e0e, 0 0 30px #cd6e0e;
-    position: relative
-  
-    
-
-  }
+      position: relative;}
 
   h2:hover{
     color: fff;
@@ -73,23 +72,195 @@ height: 600px;
 
   }
 .col{
-  background-color: rgba(148, 147, 147, 0.689);
+  background-color: #df9245;;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.card{
+.card {
   background-color: rgba(148, 147, 147, 0.689);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 2rem;
 }
 
-form{ 
-  text-align: left;
-  place-items: center;
-  background-color: rgba(148, 147, 147, 0.689);
- height: 18rem; width: 50rem;
-  border-radius: 16px;
+
+.col{
+  border-radius: 17px;
 
   
 }
+/*hats*/
+.hats {
+  background-color: #f8f9fa; /* Light background for the section */
+  padding: 50px 15px;
+}
+
+.hats h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;}
+
+/*buckle sec*/
+.buckles {
+  background-color: #f8f9fa; /* Light background for the section */
+  padding: 50px 15px;
+}
+
+.buckles h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/*boot section*/
+.boots {
+  background-color: #f8f9fa; /* Light background for the section */
+  padding: 50px 15px;
+}
+
+.boots h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .boots h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .btn-dark {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+  }
+
+.fixed-size{
+  height: 200px;
+  object-fit: cover;
+  width: 100% ;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-img-top {
+  border-bottom: 2px solid #ddd;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-footer {
+  background: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.btn-dark {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #555;
+  color: #f8f9fa;
+}
+
+
+
+
+/*Joinfamilysection*/
+/* General section styling */
+#jointhefamily1 {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.family h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.family .line {
+  width: 50%;
+  height: 4px;
+  margin: 10px auto 30px;
+  background: #ff4500;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+/* Indicators styling */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #ff4500;
+}
+
+/* Controls styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #ff4500;}
