@@ -17,11 +17,13 @@
     justify-content: space-between;
   }
 
-.nav-link{
+a.nav-link{
   color: #cd6e0e;
 }
 
-
+.container{
+  color: #555;
+}
 
   .main-banner{
 background-image: url('../images/horses.gif');
@@ -84,6 +86,7 @@ height: 600px; }
   padding-right: 2rem;
   margin: 2rem;
 }
+
 
 
 .col{
