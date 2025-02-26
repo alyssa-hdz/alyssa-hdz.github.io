@@ -1,0 +1,12 @@
+body{
+    background-color: bisque;
+}
+/*image container*/
+.img-container,.img{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
