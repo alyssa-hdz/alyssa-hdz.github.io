@@ -10,3 +10,15 @@ body{
     padding: 20px;
     flex-direction: column;
 }
+
+/*bear image*/
+.img{
+    width: 375px;
+    height: auto;
+    border-radius: 15%;
+    background-color: pink;
+    display:flex;
+    justify-content:center;
+    align-items:bottom center;
+    margin-bottom:20px;
+}
