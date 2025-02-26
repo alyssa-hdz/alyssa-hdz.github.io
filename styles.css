@@ -1,5 +1,8 @@
 body{
     background-color: bisque;
+    font-family: "Indie Flower",serif;
+    font-weight:400px;
+    font-style: normal;
 }
 /*image container*/
 .img-container,.img{
@@ -21,4 +24,51 @@ body{
     justify-content:center;
     align-items:bottom center;
     margin-bottom:20px;
+}
+
+/*Navbar*/
+.navbar{
+    background-color: pink;
+
+ 
+}
+/*button*/
+.btn{
+    background-color: pink;
+    color:black;
+    padding:10px 20px;
+    border-radius: 5px;
+    border-color: black;
+    cursor:pointer;
+}
+
+.form-control{
+    width:300px;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display:flex;
+
+}
+.search-engine{
+    padding: 20px;
+    margin-top:15px;
+    border-radius:10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.form-input{
+    padding:10px;
+    border-radius:5px;
+    border: 1px solid black;
+    width:100%;
+}
+.text{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

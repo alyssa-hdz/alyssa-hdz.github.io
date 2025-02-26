@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand " href="#">Book Talk</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +38,18 @@
       </nav>
       
       <div class="img-container">
-    <img class="img" src="images/mainlogo.jpeg" alt="mainlogo">
+    <img class="img d-flex" src="images/mainlogo.jpeg" alt="mainlogo">
+    <form class="search-engine" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn" type="submit">Search</button>
+    
+            </form>
+
+            <h1 class="text">Welcome to a New Adventure</h1>
               </div>
 
-              <h1 class="header">Welcome to a New Adventure</h1>
               <div id = "book-list">
+            
                 <!-- Book cards will be dynamically generated here -->
               </div>
 
