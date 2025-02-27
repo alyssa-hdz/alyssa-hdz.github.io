@@ -29,32 +29,31 @@
                 <a class="nav-link disabled" aria-disabled="true">Top Reads</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit">Search</button>
-            </form>
+          
           </div>
         </div>
       </nav>
       
       <div class="img-container">
     <img class="img d-flex" src="images/mainlogo.jpeg" alt="mainlogo">
-    <form class="search-engine" role="search">
-    <input class="form-control me-2" type="search" id="query" placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit">Search</button>
-    
-            </form>
+  
+            <form class = "search-engine">
+              <input  class="form-control me-2" type="text" id="searchInput" name="search" placeholder="Enter book title">
+              <button class = "btn" type="button" onclick="searchBooks()">Search</button>
+          </form>
+          <div id="results"></div>
 
             <h1 class="text">A New Adventure At The Touch Of A Page</h1>
               </div>
 
-              <div id = "book-list">
+              <div id = "results">
             
-                <!-- Book cards will be dynamically generated here -->
+                <!-- Book here -->
               </div>
 
 
 
-    <script src="main.js"></script>
+    
 </body>
+  <script src="main.js"></script>
 </html>
