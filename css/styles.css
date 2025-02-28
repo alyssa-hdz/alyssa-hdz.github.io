@@ -65,6 +65,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-bottom: 60px;
 }
 .form-input{
     padding:10px;
@@ -92,13 +93,13 @@ body{
 
 }
 .book-container img {
-    width:100%;
+    width:75%;
     height:auto;
     object-fit:contain;
     margin-bottom: 10px;
     
 }
-.book-title,.book-author{
+.h3, .p{
  margin: 5px 0px 5px;
  
 

@@ -40,6 +40,7 @@ function displayBooks(books) {
         `;
 
         resultsDiv.appendChild(bookDiv);
+       
     });
 }
 
