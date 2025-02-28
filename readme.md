@@ -5,6 +5,7 @@ This project required us to create a search engine.
 The search engine I created is used to pull up books when a term is typed into the search engine.
 I did put a limit on the number of books pulled up but that can be changed (limit 10)
 What is being pulled up exactly is the cover image of the book (if found),title and author.
+Hit enter in the middle of the looking through books to go back to the blank search
 
 Technologies used:
 -bootstrap
