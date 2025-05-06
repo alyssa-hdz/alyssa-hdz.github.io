@@ -1,0 +1,21 @@
+.flashcards{
+    display: flex;
+    flex-wrap:wrap;
+    gap:10.5px;
+}
+
+.flashcard-front,.flashcard-back{
+align-items: center;
+border:2px solid black;
+padding: 10px;
+background-color: bisque;
+}
+
+.flashcard-inner.flipped{
+    transform: rotateY(180deg);
+}
+
+.flashcard-back{
+    transform:routeY(180deg);
+    background: #ecd1d1;
+}
