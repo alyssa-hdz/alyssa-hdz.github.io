@@ -5,7 +5,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Categories from "./Categories";
 import Flashcards from "./Flashcards"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
