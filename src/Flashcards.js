@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './flashcards.css'
+import {Card,Button} from 'react-bootstrap';
 
 export default function Flashcards() {
     const { categoryId } = useParams();
@@ -43,23 +44,19 @@ export default function Flashcards() {
                 <p>No flashcards available for this category.</p>
             )}
             <div className="flashcards">
-                {flashcards.map((flashcard, index) => (
-                    <div
-                        key={flashcard.id}
-                        className="flashcard"
-                        onClick={() => handleFlip(index)}
-                    >
-                        <div className={`flashcard-inner ${flashcard.flipped ? "flipped" : ""}`}>
-                            <div className="flashcard-front">
-                                <p>{flashcard.question}</p>
-                            </div>
-                            <div className="flashcard-back">
-                                <p>{flashcard.answer}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+            {flashcards.map((flashcard, index) => (
+          <Card key={flashcard.id} className="mb-3" onClick={() => handleFlip(index)}>
+            <Card.Body>
+              <Card.Title>{flashcard.question}</Card.Title>
+              {flashcard.flipped ? (
+                <Card.Text>{flashcard.answer}</Card.Text>
+              ) : (
+                <Button variant="primary">Flip</Button>
+              )}
+            </Card.Body>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
 }
