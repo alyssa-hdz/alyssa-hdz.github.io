@@ -19,7 +19,7 @@ code {
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f7fc;
+  background-color: #abc8fb !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,12 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+  
 }
 
 h2 {
@@ -58,21 +63,22 @@ input {
 }
 
 input:focus {
-  border-color: #6c63ff;
+  border-color:#2d23ef;
 }
 
 input:focus + label,
 input:not(:placeholder-shown) + label {
-  top: -10px;
-  left: 12px;
+  top: -18px;
+  left: 11px;
   font-size: 14px;
-  color: #6c63ff;
+  color: #2d23ef;
 }
 
 label {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 13px;
+  left: 14px;
+  bottom: 5px;
   font-size: 16px;
   color: #aaa;
   pointer-events: none;
@@ -82,7 +88,7 @@ label {
 button {
   width: 100%;
   padding: 12px;
-  background-color: #6c63ff;
+  background-color: #2d23ef;
   color: white;
   border: none;
   border-radius: 6px;
@@ -93,4 +99,17 @@ button {
 
 button:hover {
   background-color: #5a54e1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  padding-left: 10px;
+ 
+}
+.navbar{
+  border-radius: 6px;
+  color: #fff;
 }

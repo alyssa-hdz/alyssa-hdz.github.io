@@ -68,9 +68,10 @@ export default function Signup() {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                />
-                 <label for="password">Password</label>
+                /> 
+                 <label for="Password">Password</label>
                  </div>
+                 
                 <button type="submit">Register</button>
             </form>
         </div>

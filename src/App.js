@@ -9,6 +9,7 @@ import Flashcards from './Flashcards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function App() {
   return (
     <Router>
@@ -16,11 +17,10 @@ function App() {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src='./Images/Project4.jpeg'
-              alt="App Logo"
+              src='/Images/logo.jpeg'
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="align-top"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
@@ -29,14 +29,14 @@ function App() {
               <Nav.Link as={Link} to="/login">Login</Nav.Link>
               <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
               <Nav.Link as={Link} to="/categories">Categories</Nav.Link>
-              <Nav.Link as={Link} to="/flashcards">Flashcards</Nav.Link>
+             
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <Routes>
-        <Route path="/" element={<h1 className="text-center mt-4">Welcome to Study App</h1>} />
+        <Route path="/" element={<h1 className="text-center mt-4">Welcome to Studyfied</h1>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/categories" element={<Categories />} />
