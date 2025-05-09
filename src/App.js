@@ -8,6 +8,7 @@ import Categories from './Categories';
 import Flashcards from './Flashcards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
     <Router>
@@ -15,13 +16,12 @@ function App() {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src="/path/to/your/logo.png"
+              src='./Images/Project4.jpeg'
               alt="App Logo"
               width="30"
               height="30"
               className="d-inline-block align-top"
             />
-            {' Study-Fied'}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
