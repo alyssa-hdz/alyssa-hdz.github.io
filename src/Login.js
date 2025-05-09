@@ -18,12 +18,13 @@ export default function Login(){
         }
 
         try {
-            const response = await fetch("http://localhost:3000/api/user/login", {
+            const response = await fetch("http://localhost:3300/api/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password })
             });
 
+            console.log({response})
             const data = await response.json();
 
             if (response.ok) {

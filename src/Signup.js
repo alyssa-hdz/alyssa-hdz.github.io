@@ -10,7 +10,7 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError("");
+        
 
         if (!username || !email || !password) {
             setError("All fields are required");
@@ -18,19 +18,20 @@ export default function Signup() {
         }
 
         try {
-            const response = await fetch("http://localhost:3000/api/user/signup", {
+            const response = await fetch("http://localhost:3300/api/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, email, password })
             });
 
-            const data = await response.json();
 
-            if (response.ok) {
+            if (!response.ok) {
                 console.log("Signup successful:", data);
-                navigate("/login"); // Redirect to login page after successful signup
-            } else {
-                setError(data.message || "Signup failed.");
+                navigate("/login"); 
+const data =await response.json();
+                    console.log(data);
+
+            
             }
         } catch (err) {
             console.error("Error:", err);

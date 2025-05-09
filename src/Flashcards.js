@@ -10,7 +10,7 @@ export default function Flashcards() {
     const [error, setError] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:3000/api/flashcards/${categoryId}`)
+        fetch(`http://localhost:3300/api/flashcards/${categoryId}`)
             .then((res) => {
                 if (!res.ok) {
                     throw new Error("Failed to fetch flashcards");
