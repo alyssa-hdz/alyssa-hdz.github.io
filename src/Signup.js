@@ -43,24 +43,34 @@ export default function Signup() {
             <h2>Sign Up</h2>
             {error && <p className="error">{error}</p>}
             <form onSubmit={handleSubmit}>
+
+            <div class="input-group">
                 <input
                     type="text"
                     placeholder="Username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
+                   <label for="username">Username</label>
+                   </div>
+                 <div class="input-group">
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
+                 <label for="Email">Email</label>
+                 </div>
+                 <div class="input-group">
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+                 <label for="password">Password</label>
+                 </div>
                 <button type="submit">Register</button>
             </form>
         </div>
