@@ -9,7 +9,7 @@ export default function Categories(){
     useEffect (()=>{
       const fetchCategories = async () => {
         try {
-          const response = await fetch("https://localhost:3300/api/categories");
+          const response = await fetch("http://localhost:3300/api/categories");
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
@@ -34,15 +34,17 @@ export default function Categories(){
   
     return (
       <div className="category-container">
-        <h2>Categories</h2>
-        {error && <p className="error">{error}</p>}
-        <ul>
-          {categories.map((cat) => (
-            <li key={cat.id} onClick={() => handleCategoryClick(cat.id)}>
+      <h2>Categories</h2>
+      {error && <p className="error">{error}</p>}
+      <ul className="category-list">
+        {categories.map((cat) => (
+          <li key={cat.id}>
+            <button onClick={() => handleCategoryClick(cat.id)} className="category-button">
               {cat.name}
-            </li>
-          ))}
-        </ul>
-      </div>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
     );
   }

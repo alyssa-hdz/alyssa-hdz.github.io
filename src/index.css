@@ -113,3 +113,36 @@ img {
   border-radius: 6px;
   color: #fff;
 }
+
+.category-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin: 10px 0;
+}
+
+.category-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}

@@ -26,12 +26,12 @@ export default function Signup() {
 
 
             if (!response.ok) {
-                console.log("Signup successful:", data);
-                navigate("/login"); 
-const data =await response.json();
-                    console.log(data);
-
-            
+                const data = await response.json(); // ✅ First get the data
+                console.log("Signup failed:", data); // Adjust message to match the condition
+                setError(data.message || "Signup failed");
+            } else {
+                console.log("Signup successful");
+                navigate("/login");
             }
         } catch (err) {
             console.error("Error:", err);

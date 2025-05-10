@@ -40,7 +40,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/category/:id" element={<Flashcards />} />
+        <Route path="/flashcards/:categoryId" element={<Flashcards />} />
       </Routes>
     </Router>
   );
