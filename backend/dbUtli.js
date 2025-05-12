@@ -14,16 +14,9 @@ db.getConnection((err, connection) => {
     }
     console.log('Connected to the database.');
     
-    // Important: release the connection back to the pool
+    
     connection.release();
 });
 
 module.exports =db;
 
-/*
-Host: sql5.freesqldatabase.com
-Database name: sql5776271
-Database user: sql5776271
-Database password: cjaT6QQhsc
-Port number: 3306
- */
