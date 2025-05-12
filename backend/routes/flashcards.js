@@ -2,29 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { insertFlashcard } = require('../models/flashcards');
 const db = require('../dbUtli');
-/*
 
-router.get('/flashcards/categories', (req, res) => {
-  db.query('SELECT * FROM categories', (err, results) => {
-    if (err) {
-      return res.status(500).json({ error: 'Database error' });
-    }
-    res.status(200).json(results);
-  });
-});*/
-
-/*
-router.get('/flashcards/:categoryId', (req, res) => {
-  const { categoryId } = req.params;
-  console.log("flashcard data", categoryId);
-  db.query('SELECT * FROM flashcards WHERE category_id = ?', [categoryId], (err, results) => {
-    if (err) {
-      return res.status(500).json({ error: 'Database error' });
-    }
-    console.log(results);
-    res.status(200).json(results);
-  });
-});*/
 router.get('/flashcards/:categoryId', async (req, res) => {
   const { categoryId } = req.params;
   console.log("flashcard data:", categoryId);
