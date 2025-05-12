@@ -51,7 +51,7 @@ export default function Flashcards() {
               {flashcard.flipped ? (
                 <Card.Text>{flashcard.answer}</Card.Text>
               ) : (
-                <Button variant="primary">Flip</Button>
+                <Button class={"flipper"} variant="primary">Flip</Button>
               )}
             </Card.Body>
           </Card>
