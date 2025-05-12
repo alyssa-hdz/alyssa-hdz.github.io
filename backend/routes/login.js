@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db/final_project'); 
+const db = require('../dbUtli');
 
 
 router.post('/login', async (req, res) => {
@@ -8,8 +8,8 @@ router.post('/login', async (req, res) => {
 
     try {
         const [rows] = await db.query(
-            'SELECT * FROM users WHERE email = ? AND password = ?',
-            [email, password]
+            'SELECT * FROM users WHERE email = ?',
+            [email]
         );
 
         if (rows.length > 0) {
@@ -22,3 +22,5 @@ router.post('/login', async (req, res) => {
         res.status(500).json({ message: 'Server error' });
     }
 });
+
+module.exports = router;
