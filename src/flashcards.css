@@ -55,7 +55,3 @@ display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
- .flipper{
-    color: blue !important;
-    cursor: pointer;
- }
